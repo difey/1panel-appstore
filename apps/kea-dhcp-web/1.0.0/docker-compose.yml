@@ -1,5 +1,6 @@
 services:
   kea-dhcp:
+    container_name: kea-dhcp
     build: ${REPO_PATH}/Dockerfile
     network_mode: host
     cap_add:
@@ -8,3 +9,7 @@ services:
       - ${REPO_PATH}/kea-dhcp4.conf:/etc/kea/kea-dhcp4.conf
       - ${REPO_PATH}/app:/app
     restart: unless-stopped
+    labels:
+      createdBy: Apps
+    ports:
+    - 18240:18240
