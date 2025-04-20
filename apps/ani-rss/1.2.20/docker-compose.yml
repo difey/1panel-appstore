@@ -11,8 +11,8 @@ services:
     - PORT=7789
     - CONFIG=/config
     - TZ=Asia/Shanghai
-    - HTTP_PROXY=${HTTP_PROXY}
-    - HTTPS_PROXY=${HTTPS_PROXY}
+    - http_proxy=${HTTP_PROXY}
+    - https_proxy=${HTTPS_PROXY}
     image: wushuo894/ani-rss:v1.2.20
     labels:
       createdBy: Apps
