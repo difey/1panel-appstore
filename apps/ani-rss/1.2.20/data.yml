@@ -50,3 +50,10 @@ additionalProperties:
       labelZh: https 代理
       required: false
       type: text
+    - default: ""
+      edit: true
+      envKey: DOWNLOADS_PATH
+      labelEn: Downloads path
+      labelZh: 下载路径
+      required: true
+      type: text
