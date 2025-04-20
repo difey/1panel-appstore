@@ -1,7 +1,7 @@
 services:
   kea-dhcp:
     container_name: kea-dhcp
-    build: ${REPO_PATH}/Dockerfile
+    image: kea-dhcp-web_kea-dhcp:lastest
     network_mode: host
     cap_add:
       - NET_ADMIN
@@ -12,4 +12,4 @@ services:
     labels:
       createdBy: Apps
     ports:
-    - 18240:18240
+      - 18240:18240
