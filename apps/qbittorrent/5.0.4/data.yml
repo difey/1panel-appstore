@@ -49,3 +49,23 @@ additionalProperties:
         zh-Hant: 時區
       required: true
       type: text
+    - default: ""
+      edit: true
+      envKey: MOUNT_PATH
+      labelEn: Mount path
+      labelZh: 挂载路径
+      label:
+        en: Mount path
+        zh: 挂载路径
+      required: true
+      type: text
+    - default: "./config"
+      edit: true
+      envKey: CONFIG_PATH
+      labelEn: Config path
+      labelZh: 配置路径
+      label:
+        en: Config path
+        zh: 配置路径
+      required: true
+      type: text

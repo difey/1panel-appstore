@@ -1,6 +1,6 @@
 # Application Initialization:
 
-- Data Directory: `./data`
+- Data Directory: `${MOUNT_PATH}`
 - Default Username: `admin`
 - Password: `Temporary password is printed to container logs.`
 

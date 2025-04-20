@@ -17,8 +17,8 @@ services:
       - ${PANEL_TORRENTING_PORT}:${PANEL_TORRENTING_PORT}/udp
       - ${PANEL_APP_PORT_HTTP}:${PANEL_APP_PORT_HTTP}
     volumes:
-      - ./config:/config
-      - ./data:/downloads
+      - ${CONFIG_PATH}:/config
+      - ${MOUNT_PATH}:/downloads
     labels:
       createdBy: "Apps"
 networks:
