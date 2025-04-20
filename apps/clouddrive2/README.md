@@ -1,6 +1,4 @@
-# KEA-DHCP-WEB
+# Clouddrive2
 
-一个有简单web页面的dhcp服务器
-
-需要搭配[github repo](https://github.com/difey/kea-dhcp-web.git)使用
+CloudDrive是一个强大的多云盘管理工具，为用户提供包含云盘本地挂载的一站式的多云盘解决方案。
 
