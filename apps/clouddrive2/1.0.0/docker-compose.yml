@@ -1,0 +1,16 @@
+services:
+  clouddrive:
+    image: cloudnas/clouddrive2
+    container_name: clouddrive
+    restart: unless-stopped
+    environment:
+      - CLOUDDRIVE_HOME=/Config
+    volumes:
+      - ${CLOUD_NAS_PATH}:/CloudNAS:shared
+      - ${CONFIG_PATH}:/Config
+      - ${MEDIA_PATH}:/media:shared
+    network_mode: host
+    pid: host
+    privileged: true
+    devices:
+      - /dev/fuse:/dev/fuse

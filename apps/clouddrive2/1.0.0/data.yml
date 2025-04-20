@@ -1,0 +1,23 @@
+additionalProperties:
+  formFields:
+    - default: "/mnt/clouddrive"
+      edit: true
+      envKey: CLOUD_NAS_PATH
+      labelEn: Data point path
+      labelZh: 数据点路径
+      required: true
+      type: text
+    - default: "/media/clouddrive"
+      edit: true
+      envKey: MEDIA_PATH
+      labelEn: Media path
+      labelZh: 媒体路径
+      required: true
+      type: text
+    - default: "~/.clouddrive"
+      edit: true
+      envKey: CONFIG_PATH
+      labelEn: Config path
+      labelZh: 配置路径
+      required: true
+      type: text  

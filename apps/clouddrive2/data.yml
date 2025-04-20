@@ -1,0 +1,15 @@
+﻿additionalProperties:
+  key: clouddrive2
+  name: CloudDrive2
+  tags:
+    - WebSite
+    - Tool
+    - Local
+  shortDescZh: CloudDrive是一个强大的多云盘管理工具, 为用户提供包含云盘本地挂载的一站式的多云盘解决方案。
+  shortDescEn: CloudDrive is a powerful multi-cloud disk management tool that provides users with a one-stop multi-cloud disk solution, including local mounting of cloud disks.
+  type: website
+  crossVersionUpdate: true
+  limit: 1
+  website: https://www.clouddrive2.com/
+  github: https://github.com/cloud-fs
+  document: https://www.clouddrive2.com/docker.html
