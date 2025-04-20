@@ -1,0 +1,15 @@
+﻿additionalProperties:
+  key: kea-dhcp-web
+  name: KEA-DHCP-Web
+  tags:
+    - WebSite
+    - Tool
+    - Local
+  shortDescZh: 一个简单的 KEA DHCP Web 界面
+  shortDescEn: A simple KEA DHCP Web interface
+  type: website
+  crossVersionUpdate: true
+  limit: 1
+  website: https://github.com/difey/kea-dhcp-web
+  github: https://github.com/difey/kea-dhcp-web
+  document: https://github.com/difey/kea-dhcp-web

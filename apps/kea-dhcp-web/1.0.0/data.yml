@@ -1,0 +1,9 @@
+additionalProperties:
+  formFields:
+    - default: ""
+      edit: true
+      envKey: REPO_PATH
+      labelEn: Repo path
+      labelZh: 仓库路径
+      required: true
+      type: text
