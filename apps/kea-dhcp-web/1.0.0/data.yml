@@ -2,8 +2,15 @@ additionalProperties:
   formFields:
     - default: ""
       edit: true
-      envKey: REPO_PATH
-      labelEn: Repo path
-      labelZh: 仓库路径
+      envKey: CONF_PATH
+      labelEn: Config path
+      labelZh: 配置文件路径
+      required: true
+      type: text
+    - default: ""
+      edit: true
+      envKey: SERVER_CODE_PATH
+      labelEn: Server code path
+      labelZh: 服务器代码路径
       required: true
       type: text
