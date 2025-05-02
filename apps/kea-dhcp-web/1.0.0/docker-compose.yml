@@ -1,15 +1,15 @@
 services:
-  kea-dhcp:
-    container_name: kea-dhcp
-    image: kea-dhcp-web_kea-dhcp:lastest
+  kea-dhcp-web:
+    container_name: kea-dhcp-web
     network_mode: host
     cap_add:
       - NET_ADMIN
-    volumes:
-      - ${REPO_PATH}/kea-dhcp4.conf:/etc/kea/kea-dhcp4.conf
-      - ${REPO_PATH}/app:/app
-    restart: unless-stopped
+    image: blacknail/kea-dhcp-web:latest
     labels:
       createdBy: Apps
+    restart: unless-stopped
     ports:
       - 18240:18240
+    volumes:
+    - ${CONF_PATH}:/etc/kea/kea-dhcp4.conf
+    - ${SERVER_CODE_PATH}:/app
